@@ -1,0 +1,4 @@
+include ':userinterface'
+include ':userinterface'
+include ':app'
+rootProject.name = "androidproject"
