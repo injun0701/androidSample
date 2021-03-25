@@ -4,15 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AlertDialogActivity"
+    tools:context=".AlertActivity"
     android:orientation="vertical">
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btnAlert"
-        android:text="기본 대화상자"
-        android:textSize="20sp"/>
-
+        android:text="얼럿 출력"
+        android:id="@+id/btnAlert"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="선택 얼럿 출력"
+        android:id="@+id/btnItemDialog"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="단일 선택 얼럿 출력"
+        android:id="@+id/btnOneLanguage"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="다중 선택 얼럿 출력"
+        android:id="@+id/btnMultiLanguage"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="로그인"
+        android:id="@+id/btnLogin"/>
 
 </LinearLayout>
