@@ -15,6 +15,7 @@
             <option value="$PROJECT_DIR$/eventhandling" />
             <option value="$PROJECT_DIR$/resourceuse" />
             <option value="$PROJECT_DIR$/userinterface" />
+            <option value="$PROJECT_DIR$/varietyview" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

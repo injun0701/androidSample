@@ -1,3 +1,4 @@
+include ':varietyview'
 include ':resourceuse'
 include ':eventhandling'
 include ':userinterface'
