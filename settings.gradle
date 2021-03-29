@@ -1,3 +1,4 @@
+include ':activity'
 include ':varietyview'
 include ':resourceuse'
 include ':eventhandling'
