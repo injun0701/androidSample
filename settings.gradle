@@ -1,3 +1,5 @@
+include ':localdata'
+include ':thread'
 include ':activity'
 include ':varietyview'
 include ':resourceuse'
