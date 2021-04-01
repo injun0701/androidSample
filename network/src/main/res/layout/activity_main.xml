@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tfOutput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="서버가 보내온 메시지 출력"/>
+
+    <EditText
+        android:id="@+id/tfInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="서버에 보낼 메시지를 입력하세요."/>
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="서버에 전송"/>
+
+</LinearLayout>
