@@ -69,7 +69,7 @@ public class HtmlDownloadActivity extends AppCompatActivity {
                                 BufferedReader br;
                                 //연결된 곳의 헤더 정보를 가져오기
                                 String headerType = con.getContentType();
-                                //문자열 비교 - EUC-KR이 포함되어 있는지 확인
+                                //인코딩 방식에 따라 스트림을 다르게 생성
                                 if(headerType.toUpperCase().indexOf("EUC-KR") >= 0) {
                                     br = new BufferedReader(new InputStreamReader(con.getInputStream(), "EUC-KR"));
                                 } else {
