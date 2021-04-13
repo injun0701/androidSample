@@ -42,14 +42,21 @@ public class VideoPlayActivity extends AppCompatActivity {
             }
         });
 
-        //비디오 재생 준비가 되면
+        //비디오 재생 준비 되면
         videoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
             @Override
             public void onPrepared(MediaPlayer mp) {
                 Snackbar.make(getWindow().getDecorView().getRootView(), "재생 준비 완료", Snackbar.LENGTH_SHORT).show();
             }
         });
-        
+
+        //비디오 재생 완료 되면
+        videoView.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer player) {
+                Snackbar.make(getWindow().getDecorView().getRootView(), "동영상 재생이 완료되었습니다.", Snackbar.LENGTH_LONG).show();
+            }
+        });
+
         //볼륨을 최대로 설정
         Button volumeBtn = (Button)findViewById(R.id.volumeBtn);
         volumeBtn.setOnClickListener(new View.OnClickListener() {
